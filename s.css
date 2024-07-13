@@ -1,0 +1,19 @@
+/* public/css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #6a1b9a; /* Roxo */
+}
+
+a {
+    color: #6a1b9a; /* Roxo */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="create_db.js"></script>
+    <script src="app.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <a href="base.html">Home</a>
+        <a href="index.html">Produtos</a>
+        <a href="cart.html">Carrinho</a>
+        <a href="login.html">Usuário</a>
+    <div class="searchBox">
+
+
+    </div>
+<h1 id="arco">Produto</h1>
+</nav>
+<h1>Processador Intel Core I5-12400f</h1>
+<img src="https://http2.mlstatic.com/D_NQ_NP_668293-MLU72567973604_112023-O.webp" alt="Logo do Fornecedor">
+<p>Obtenha um desempenho incrível com Ray Tracing aprimorados, novos multiprocessadores de streaming e memória G6 de alta velocidade.</p>
+<p>Compatibilidade: 12GB GDDR6, DLSS, Ray Tracing - RTX 3060 Ventus 2X 12G OC</p>
+<p>Fornecedor: Magazine luiza</p>
+<p>Preço: R$ R$ 2.500,99</p>
+<form action="create_db.js" method="POST">
+    <input type="hidden" name="product_id" value="{{ product.id }}">
+    <input type="number" name="quantity" value="1" min="1">
+    <button type="submit">Adicionar ao Carrinho</button>
+</form>
+<a href="index.html">Voltar para a Página Inicial</a>
+{% endblock %}

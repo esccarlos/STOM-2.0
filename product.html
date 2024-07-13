@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="create_db.js"></script>
+    <script src="app.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <a href="base.html">Home</a>
+        <a href="index.html">Produtos</a>
+        <a href="cart.html">Carrinho</a>
+        <a href="login.html">Usuário</a>
+    <div class="searchBox">
+
+
+    </div>
+<h1 id="arco">Produto</h1>
+</nav>
+<h1>Placa Mãe Gigabyte B550M Aorus Elite</h1>
+<img src="https://images.kabum.com.br/produtos/fotos/114781/placa-mae-gigabyte-b550m-aorus-elite-amd-am4-micro-atx-ddr4_1594908595_gg.jpg" alt="Logo do Fornecedor">
+<p>Compativel aos processadores AMD Ryzen de 3ª geração, além de oferecer desempenho aprimorado do sistema.</p>
+<p>Compatibilidade: - 4 soquetes DDR4 DIMM que suportam até 128 GB (capacidade DIMM única de 32 GB) de memória do sistema
+<br>
+    - Processadores AMD Ryzen ™ de 3ª geração: Suporte para módulos de memória DDR4 4000 (OC) / 3600 (OC) / 3333 (OC) / 3200/2933/2667/2400/2133 MHz
+    <br> 
+    - Nova geração de processadores AMD Ryzen ™ com Radeon ™ Graphics: Suporte para DDR4 4733 (OC) / 4600 (OC) / 4400 (OC) / 4000 (OC) / 3600 (OC) / 3333 (OC) / 3200/2933/2667 / Módulos de memória 2400/2133 MHz
+    <br>  
+    - Arquitetura de memória de canal duplo
+    <br> 
+    - Suporte para módulos de memória ECC sem buffer DIMM 1Rx8 / 2Rx8
+    <br>  
+    - Suporte para módulos de memória DIMM 1Rx8 / 2Rx8 / 1Rx16 sem buffer ECC
+    <br> 
+    - Suporte para módulos de memória Extreme Memory Profile (XMP)
+    <br>  
+    * Consulte "Lista de suporte de memória" para obter mais informações.</p>
+    <br>
+    <p>Fornecedor: Kabum</p>
+<p>Preço: R$ 800,99</p>
+<form action="cart.html" method="POST">
+    <input type="hidden" name="product_id" value="Placa-mae">
+    <input type="number" name="quantity" value="1" min="1">
+    <button type="submit">Adicionar ao Carrinho</button>
+</form>
+{% endblock %}

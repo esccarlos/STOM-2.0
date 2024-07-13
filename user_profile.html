@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <a href="base.html">Home</a>
+        <a href="index.html">Produtos</a>
+        <a href="cart.html">Carrinho</a>
+        <a href="login.html">Usuário</a>
+        <div class="searchBox">
+    </div>
+<h1 id="arco">Perfil do Usuário</h1>
+</nav>
+
+
+<form class="usuario" action="user_profile.html" method="POST">
+    <label for="name">Nome:</label>
+    <input type="text" name="name" id="name" value="nome de usuario">
+    
+    <label for="phone">Telefone:</label>
+    <input type="text" name="phone" id="phone" value="telefone">
+    
+    <form id="cartaoForm">
+        <label for="nomeTitular">Nome do Titular do Cartão:</label>
+        <input type="text" id="nomeTitular" required>
+
+        <label for="numeroCartao">Número do Cartão:</label>
+        <input type="text" id="numeroCartao" required>
+
+        <label for="validade">Validade:</label>
+        <input type="month" id="validade" required>
+
+        <label for="cvv">CVV:</label>
+        <input type="number" id="cvv" required>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('cartaoForm');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Aqui você pode adicionar lógica para enviar os dados para o servidor
+            console.log('Dados enviados:', {
+                nomeTitular: form.nomeTitular.value,
+                numeroCartao: form.numeroCartao.value,
+                validade: form.validade.value,
+                cvv: form.cvv.value
+            });
+        });
+    </script>   
+</form>
+
