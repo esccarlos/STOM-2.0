@@ -20,16 +20,16 @@
     </div>
 <h1 id="arco">Produto</h1>
 </nav>
-<h1>{{ product.name }}</h1>
-<img src="{{ url_for('static', filename='images/' + product.supplier_logo) }}" alt="Logo do Fornecedor">
-<p>{{ product.description }}</p>
-<p>Compatibilidade: {{ product.compatibility }}</p>
-<p>Fornecedor: {{ product.supplier }}</p>
-<p>Preço: R$ {{ product.price }}</p>
-<form action="{{ url_for('cart') }}" method="POST">
+<h1>Fonte Mancer Thunder 500W</h1>
+<img src="https://down-br.img.susercontent.com/file/sg-11134201-7rd5u-lvnjaio1ekj282_tn" alt="Logo do Fornecedor">
+<p>Eficiente, durável e silenciosa. A fonte Mancer Thunder 500W veio para transformar sua build gamer.</p>
+<p>Compatibilidade: Força de entrada: 100~240V AC 8A-4A 47-63Hz</p>
+<p>Fornecedor: Shopee</p>
+<p>Preço: R$ 201,99</p>
+<form action="cart.html" method="POST">
     <input type="hidden" name="product_id" value="{{ product.id }}">
     <input type="number" name="quantity" value="1" min="1">
     <button type="submit">Adicionar ao Carrinho</button>
 </form>
-<a href="{{ url_for('index') }}">Voltar para a Página Inicial</a>
+<a href="index.html">Voltar para a Página Inicial</a>
 {% endblock %}

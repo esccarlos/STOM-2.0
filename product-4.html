@@ -20,16 +20,16 @@
     </div>
 <h1 id="arco">Produto</h1>
 </nav>
-<h1>{{ product.name }}</h1>
-<img src="{{ url_for('static', filename='images/' + product.supplier_logo) }}" alt="Logo do Fornecedor">
-<p>{{ product.description }}</p>
-<p>Compatibilidade: {{ product.compatibility }}</p>
-<p>Fornecedor: {{ product.supplier }}</p>
-<p>Preço: R$ {{ product.price }}</p>
-<form action="{{ url_for('cart') }}" method="POST">
+<h1>WATER COOLER AIGO DARKFLASH AP240</h1>
+<img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/a/p/ap240white5.jpg" alt="Logo do Fornecedor">
+<p>Simplicidade, elegância e funcionalidade, o DC240 RADIANT é ideal para renovar seu setup e controlar com eficiência a temperatura de seu processador</p>
+<p>Compatibilidade: Intel: LGA 115X / 17XX / 20XX</p>
+<p>Fornecedor: Pichau</p>
+<p>Preço: R$ R$ 359,99</p>
+<form action="cart.html" method="POST">
     <input type="hidden" name="product_id" value="{{ product.id }}">
     <input type="number" name="quantity" value="1" min="1">
     <button type="submit">Adicionar ao Carrinho</button>
 </form>
-<a href="{{ url_for('index') }}">Voltar para a Página Inicial</a>
+<a href="index.html">Voltar para a Página Inicial</a>
 {% endblock %}

@@ -1,9 +1,10 @@
+/*  parte do corpo do site  */
 body {
     font-family: Arial, sans-serif;
     background-color: #1C0727;
     color: aliceblue;
 }
-
+/*parte  do cabeçario/navegador entre as paginas*/
 nav {
     background-color: #900B48;
     color: white;
@@ -22,27 +23,76 @@ nav a:hover {
     text-decoration: underline;
 }
 
-  
 
+  
+/*logo na parte do "home"*/
 .content {
     padding: 20px;
+    left: auto;
+    right: auto;font-size: 30px;
 }
 .logo {
     text-align: center;
     float: left;
+    
 }
+
+
+/*estrutura do home*/
+.cabeçario-home{
+    width: 500px;
+    height: 510px;
+    text-align: center;
+    float: right;
+    background-color: #900B48;
+    border-radius:10px;
+    transition: all .3s;
+    margin-right: 50px;
+}
+.cabeçario-home a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+.cabeçario-home a:houver {
+    text-decoration: underline;
+}
+.tx {
+    text-align: center;
+    box-align: center;
+    background: linear-gradient(163deg, black 1%, #76125A 99%);
+    border-radius: 5px;
+    width: 405px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .2s;
+}
+.tx:houver{
+    transform: scale(0.90);
+    border-radius: 20px;
+}
+.cabeçario-home:hover  {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+
+
+
+
+
 #arco{
-      background: linear-gradient(to left,
-      violet, indigo,
-      blue, green, yellow,
-      orange, red);
-      background-clip: text;
-      display: inline;
-      color: transparent;
-      animation: animated 5s linear infinite;
+    background: linear-gradient(to left,
+    violet, indigo,
+    blue, green, yellow,
+    orange, red);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 5s linear infinite;
 }
 @keyframes animated{
-    to {background-position-x: 161px};
+  to {background-position-x: 161px};
 }
 
 #pes{
@@ -76,7 +126,7 @@ nav a:hover {
    }
  
  
-.products, .cart-items, .card, .card2{
+   .products, .cart-items, .card, .card2{
     display: flex;
     flex-wrap: wrap;
     float: left;
@@ -112,7 +162,7 @@ form {
     max-width: 400px;
     margin: 0 auto;
 }
-input[type="text"], input[type="number"], select {
+.pf, select {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;

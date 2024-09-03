@@ -1,16 +1,35 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="create_db.js"></script>
+    <script src="app.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <nav>
+        <a href="base.html">Home</a>
+        <a href="index.html">Produtos</a>
+        <a href="cart.html">Carrinho</a>
+        <a href="login.html">Usuário</a>
+    <div class="searchBox">
 
-{% block content %}
-<h1>{{ product.name }}</h1>
-<img src="{{ url_for('static', filename='images/' + product.supplier_logo) }}" alt="Logo do Fornecedor">
-<p>{{ product.description }}</p>
-<p>Compatibilidade: {{ product.compatibility }}</p>
-<p>Fornecedor: {{ product.supplier }}</p>
-<p>Preço: R$ {{ product.price }}</p>
-<form action="{{ url_for('cart') }}" method="POST">
+
+    </div>
+<h1 id="arco">Produto</h1>
+</nav>
+<h1>Memória DDR4 SuperFrame RGB, 8GB</h1>
+<img src="https://img.terabyteshop.com.br/produto/g/memoria-ddr4-superframe-rgb-8gb-3200mhz-gray-sfgaosg48gb3200c22bsc_149183.png" alt="Logo do Fornecedor">
+<p>A Memória DDR4 SuperFrame RGB de 8GB, 3200MHz, na cor cinza é uma escolha excelente para usuários que buscam desempenho e estilo em seus sistemas.</p>
+<p>Compatibilidade: Capacidade: 8GB<br>Frequência: 3200MHz </p>
+<p>Fornecedor: Terabyte</p>
+<p>Preço: R$ 134,90</p>
+<form action="cart.html" method="POST">
     <input type="hidden" name="product_id" value="{{ product.id }}">
     <input type="number" name="quantity" value="1" min="1">
     <button type="submit">Adicionar ao Carrinho</button>
 </form>
-<a href="{{ url_for('index') }}">Voltar para a Página Inicial</a>
+<a href="index.html">Voltar para a Página Inicial</a>
 {% endblock %}
