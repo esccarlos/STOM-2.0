@@ -79,11 +79,11 @@ nav a:hover {
 }
 
 @keyframes destaque{
-    0%{transform: scale(0.98);}
-    25%{transform: scale(0.94);}
-    50%{transform: scale(0.90);}
-    75%{transform: scale(0.94);}
-    100%{transform: scale(0.98);}
+    0%{transform: scale(0.99);}
+    25%{transform: scale(0.98);}
+    50%{transform: scale(0.97);}
+    75%{transform: scale(0.98);}
+    100%{transform: scale(0.99);}
 }
 
 
